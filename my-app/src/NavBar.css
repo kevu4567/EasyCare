@@ -1,0 +1,60 @@
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #1DA1F2;
+  }
+  
+  nav img {
+    width: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-left: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+  }
+
+  nav .company-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  font-weight: bold; 
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+  nav a:hover {
+    background: #6C5CE7;
+    border-radius: 5px;
+  }
+  
+  nav a.active {
+    background: #0ACF83; 
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  .company-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem; 
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }

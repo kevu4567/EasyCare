@@ -1,0 +1,244 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6; /* Improve readability */
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.service-rating {
+  background-color: #ffdd57;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.service-price {
+  color: #28a745;
+  font-size:  1.5rem;
+  margin-left: -650px;
+}
+
+.service-price,
+.service-location,
+.service-review {
+  position: relative;
+  right: auto;
+  top: auto;
+  transform: none;
+  display: block; /* Make sure it's on a new line if needed */
+}
+
+.service-location {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  position: absolute; /* Position the location in the top right corner */
+  top: 41px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+.service-review {
+   font-style: italic;
+  margin-bottom: 10px;
+  color: #666;
+  position: absolute; /* Position the review in the top right corner */
+  top: 58px; /* Adjust the top position as needed */
+  right: 62px; /* Adjust the right position as needed */
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-form label {
+  display: flexs;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-form input[type="text"],
+.filter-form input[type="number"],
+.filter-form select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.filter-form button {
+  padding:  10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-form button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.service-image {
+  border-radius: 50%; /* Makes the image round */
+  width: 120px; /* Adjust as needed */
+  height: 120px; /* Adjust as needed */
+  object-fit: cover;
+  border: 3px solid #ddd; /* Optional: adds a border around the image */
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 200px; /* Adjust as necessary */
+}
+
+.service-item img {
+  width: 100px; /* adjust as needed */
+  height: 100px; /* adjust as needed */
+  object-fit: cover;
+  border-radius: 50%; /* for round images */
+  margin-right: 650px;
+}
+
+
+.service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-details {
+  text-align: center;
+}
+
+.filter-form div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.filter-form input[type="checkbox"] + label {
+  font-size: 1rem; /* Adjust the size as needed */
+  margin-left: 5px; 
+}
+
+.filter-form input[type="checkbox"] + label {
+  font-size:  1rem; /* Adjust the size as needed */
+  margin-left: 10px; /* Adjust the spacing as needed */
+}
+
+.service-name {
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin: 0px 0;
+  position: absolute; /* Position the name underneath the image */
+  top: 0px; /* Adjust the top position as needed */
+  left: 50px; /* Center the name horizontally */
+  transform: translateX(-50%); /* Center the name horizontally */
+}
+
+.service-name,
+.service-rating {
+  margin-left: 150px;
+}
+
+.service-rating {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: absolute; /* Position the rating in the top right corner */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+.service-info {
+  text-align: center;
+}
+
+/* Favorite button styles */
+.favorite-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px; /* Adjust spacing around the button as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -350px;
+  top: 70px;
+}
+
+.filter-form input[type="checkbox"] {
+  /* Your existing styles */
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+}
+
+/* Styles for the filled heart (favorited) */
+.filled-heart {
+  color: rgb(228, 10, 10); /* Color for when the item is favorited */
+  font-size: 1.5em; /* Adjust size as needed */
+}
+
+/* Styles for the empty heart (not favorited) */
+.empty-heart {
+  color: grey; /* Color for when the item is not favorited */
+  font-size: 1.5em; /* Adjust size as needed */
+}

@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4; /* Light background for the page */
+}
+
+.holder {
+  max-width: 700px; /* Fixed width for larger screens, responsive */
+  margin: 2rem auto; /* Center the form on the page */
+  background: #ffffff; /* White background */
+  padding: 2rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+h1.welcome-text,
+h2.welcome-text {
+  text-align: center; /* Center-align the header texts */
+  margin-bottom: 1rem; /* Spacing below headers */
+  font-family: 'Helvetica', sans-serif; /* Sans-serif font for cleaner look */
+  font-size: 2rem; /* Larger font size for headers */
+  color: #5D647B; /* Subdued text color for a modern look */
+}
+
+#checkout label {
+  display: flex;
+  justify-content: space-between; /* Aligns the label and input */
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#message {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  margin-top: 1rem;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+#message b {
+ margin-right: 0.5rem; /* Add margin to the right of the 'Message' label */
+  flex-shrink: 0;  /* Add margin to the right of the 'Message' label */
+}
+
+#message textarea {
+  flex-grow: 1;
+  width: 500px; /* Full width inputs */
+  padding: 0.8rem; /* Comfortable padding inside inputs */
+  margin-bottom: 1rem; /* Spacing below inputs */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Matched border radius */
+  font-size: 1rem; /* Standard font size */
+  resize: vertical; /* Allows vertical resizing, you can set to 'none' to disable resizing */
+}
+
+
+#checkout input[type="text"],
+#checkout input[type="number"],
+#checkout select,
+#checkout textarea {
+  flex: 1; /* Allows inputs to fill the space */
+  margin-left: 1rem; /* Adds space between label and input */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+/* Style the confirm button more dynamically */
+#checkout button[type="confirm"] {
+  width: 300px;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #28a745; /* Modern color for the button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+
+#checkout button[type="confirm"]:hover,
+#checkout button[type="confirm"]:focus {
+  background-color:  #218838; /* A slightly darker hue on hover/focus */
+  transform: translateY(-3px); /* Slight upward lift */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+@media (max-width: 768px) {
+  .holder {
+    width: 80%;
+  }
+
+  #checkout label {
+    flex-direction: column; /* Stack label and input on smaller screens */
+    align-items: flex-start;
+  }
+
+  #checkout input[type="text"],
+  #checkout input[type="number"],
+  #checkout select,
+  #checkout textarea {
+    width: 100%; /* Full width inputs */
+    margin-left: 0;
+    margin-top: 0.5rem; /* Add space between label and input */
+  }
+}
+
+#checkout {
+    margin-top: 1px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+button[type="confirm"] {
+    background-color: #28a745; /* Soft green for submit button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 30px;
+}
+
+button[type="confirm"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}

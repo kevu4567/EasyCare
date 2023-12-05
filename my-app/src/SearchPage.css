@@ -1,0 +1,179 @@
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container { 
+  /* max-width: ; */
+  margin: 2rem auto; 
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+input,
+button {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+
+button:hover {
+  background-color: #e2e2e2; /* Slightly darker background on hover */
+}
+
+button.active {
+  background-color: #007bff; /* Soft blue for active state */
+  color: #fff;
+}
+
+button:not(.active) {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #28a745; /* Soft green for submit button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+button[type="submit"]:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed; 
+  background-color: #ccc;
+}
+
+button:hover[disabled] {
+  background-color: #ccc;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+button {
+  padding: 10px;
+  border: 1px solid #ccc; /* Softer border color */
+  border-radius: 4px; /* Rounded corners for inputs and buttons */
+  font-size: 1rem; /* Standard font size for inputs */
+  margin-bottom: 1px;
+}
+.date-time-group {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between label and input */
+}
+
+input[type="date"],
+input[type="time"] {
+  width: auto; /* Adjust width to content */
+  margin: 0;
+}
+
+.content-container {
+  display: flex; /* Use flexbox to align the cards and the reminder */
+  align-items: flex-start; /* Align items at the start of the container */
+  justify-content: space-between; /* Space between the cards and the reminder */
+}
+
+.cards-container {
+  width: 46%;
+}
+
+.card-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 150px;
+  height: 175px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  margin-top: 35px;
+  font-size: 1em;
+  color: #000202;
+  font-weight: bold;
+}
+
+.card-details {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.reminder-container {
+  margin-top: 10px;
+  position: absolute;
+  right: 20px;
+  width: 47%;
+  height: 350px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reminder-container h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.reminder-container p {
+  color: #666;
+  margin-bottom: 0;
+  text-align: center;
+}
