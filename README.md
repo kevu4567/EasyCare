@@ -3,7 +3,7 @@
 # YouTube: https://youtu.be/-cHiZouK-L8
 
 -- This project was a team effort and we achieved our goal by following a few principles. 
-![Uploading Screenshot 2023-10-13 at 1.32.45 PM.png…]()
+
 
 # Project Design Principles
 "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupéry
